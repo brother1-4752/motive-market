@@ -1,0 +1,17 @@
+[
+  {
+    "title": "motive",
+    "description": "<p>동기부여 컨텐츠 설명</p>",
+    "backgroundImageSrc": "백그라운드 이미지링크"
+  },
+  {
+    "title": "emotion",
+    "description": "<p>감정분석 설명</p>",
+    "backgroundImageSrc": "백그라운드 이미지링크"
+  },
+  {
+    "title": "remind",
+    "description": "<p>리마인드 기능 설명</p>",
+    "backgroundImageSrc": "백그라운드 이미지링크"
+  }
+]
