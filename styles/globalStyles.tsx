@@ -1,13 +1,8 @@
-import emotionReset from 'emotion-reset'
-import { css } from '@emotion/react'
+import { createGlobalStyle } from 'styled-components'
+import { reset } from 'styled-reset'
 
-emotionReset.styles
-
-const globalStyles = css`
-  ${emotionReset}
-  * {
-    box-sizing: border-box;
-  }
+const GlobalStyle = createGlobalStyle`
+    ${reset}
 `
 
-export default globalStyles
+export default GlobalStyle

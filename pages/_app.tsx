@@ -1,11 +1,10 @@
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { Global, ThemeProvider } from '@emotion/react';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
 import globalStyles from '@/styles/globalStyles';
-import theme from '@/styles/theme';
 import Layout from '@/components/Common/Layout/Layout';
+import GlobalStyle from '@/styles/globalStyles';
 
 const queryClient = new QueryClient();
 
@@ -16,13 +15,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>MoKet - Motive Market</title>
       </Head>
       <QueryClientProvider client={queryClient}>
-        <ThemeProvider theme={theme}>
-          <Global styles={globalStyles} />
-
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        </ThemeProvider>
+        <GlobalStyle />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </QueryClientProvider>
     </>
   );
