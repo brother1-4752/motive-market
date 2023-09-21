@@ -2,9 +2,8 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
-import globalStyles from '@/styles/globalStyles';
 import Layout from '@/components/Common/Layout/Layout';
-import GlobalStyle from '@/styles/globalStyles';
+import GlobalStyle from '@/styles/GlobalStyle';
 
 const queryClient = new QueryClient();
 
