@@ -1,4 +1,4 @@
-import { CreateStt } from '@/hooks/useCreateStt';
+import { CreateStt } from '@/utils/createStt';
 import axios from 'axios';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
