@@ -101,9 +101,9 @@ const Community = () => {
               <div>Comments icons</div>
             </div>
           </div>
-          <BottomNavigationBar />
         </div>
       ))}
+      <BottomNavigationBar />
       <FloatingUploadButton />
     </StyledCommunity>
   );
