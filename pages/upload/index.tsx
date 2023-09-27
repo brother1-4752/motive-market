@@ -20,9 +20,7 @@ const Upload = () => {
   } = useForm<UploadInputProps>();
 
   const onSubmitHandler: SubmitHandler<UploadInputProps> = async (data) => {
-    // const testData = await CreateStt(data.audio[0]);
-    // console.log(testData);
-    console.log(data.audio[0]);
+    // const audioURL = URL.createObjectURL(watch('audio')[0])
   };
 
   return (
