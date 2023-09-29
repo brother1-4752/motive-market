@@ -15,7 +15,6 @@ const Annotations = ({ step }: { step: number }) => {
           <h1>{a.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: a.description }}></div>
           {/* image url 추후 추가 */}
-          {/* image url 추후 추가 */}
         </div>
       )
   );
