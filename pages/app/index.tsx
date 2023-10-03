@@ -4,6 +4,7 @@ import { ReactMediaRecorder } from 'react-media-recorder';
 
 function App() {
   // 음성 인식 후 텍스트 반환값
+
   const [resp, setResp] = useState('');
 
   const fileupload = (event: SyntheticEvent<HTMLFormElement>) => {
@@ -34,9 +35,11 @@ function App() {
             <button onClick={startRecording}>start recording</button>
             <button onClick={stopRecording}>stop recording</button>
             <br />
+            
             {/* 녹음한 파일 들어보기 */}
             <audio src={mediaBlobUrl} controls></audio>
             <br />
+
             {/* 녹음한 파일 다운로드 */}
             <a href={mediaBlobUrl} download="myvoice.wav">
               File Download
