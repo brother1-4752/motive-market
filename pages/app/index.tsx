@@ -4,6 +4,7 @@ import { ReactMediaRecorder } from 'react-media-recorder';
 
 function App() {
   // 음성 인식 후 텍스트 반환값
+  // TODO: 백엔드 서버 만들기
 
   const [resp, setResp] = useState('');
 
@@ -35,7 +36,7 @@ function App() {
             <button onClick={startRecording}>start recording</button>
             <button onClick={stopRecording}>stop recording</button>
             <br />
-            
+
             {/* 녹음한 파일 들어보기 */}
             <audio src={mediaBlobUrl} controls></audio>
             <br />
