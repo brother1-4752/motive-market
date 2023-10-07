@@ -3,7 +3,6 @@ import axios from 'axios';
 import { ReactMediaRecorder } from 'react-media-recorder';
 
 function App() {
-  // TODO: 백엔드 서버 만들기
   // 음성 인식 후 텍스트 반환값
 
   const [resp, setResp] = useState('');
